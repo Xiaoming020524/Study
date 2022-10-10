@@ -12,35 +12,41 @@ int main()
 	int n;
 	for (n = 0; n < 5;)
 	{
-		printf("1¡¢¼Ó·¨ 2¡¢¼õ·¨ 3¡¢³Ë·¨ 4¡¢³ý·¨ 0¡¢ÍË³ö\n");
-		printf("ÇëÑ¡Ôñ£º");
+		printf("1ã€åŠ æ³• 2ã€å‡æ³• 3ã€ä¹˜æ³• 4ã€é™¤æ³• 0ã€é€€å‡º\n");
+		printf("è¯·é€‰æ‹©ï¼š");
 		scanf("%d", &n);
-		printf("ÇëÊäÈëÁ½¸öÊý£º");
-		scanf("%d%d", &i, &j);
 		if (n == 0)
 		{
-			printf("¹Ø±Õ¼ÆËãÆ÷\n");
+			printf("å…³é—­è®¡ç®—å™¨\n");
 			break;
 		}
 		else if(n == 1)
 		{
+			printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•°ï¼š");
+			scanf("%d%d", &i, &j);
 			int sum=Add(i,j);
-			printf("½á¹ûÎª£º%d\n", sum);
+			printf("ç»“æžœä¸ºï¼š%d\n", sum);
 		}
 		else if (n == 2)
 		{
+			printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•°ï¼š");
+			scanf("%d%d", &i, &j);
 			int sum = cut(i, j);
-			printf("½á¹ûÎª£º%d\n", sum);
+			printf("ç»“æžœä¸ºï¼š%d\n", sum);
 		}
 		else if (n == 3)
 		{
+			printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•°ï¼š");
+			scanf("%d%d", &i, &j);
 			int sum = ride(i, j);
-			printf("½á¹ûÎª£º%d\n", sum);
+			printf("ç»“æžœä¸ºï¼š%d\n", sum);
 		}
 		else if (n == 4)
 		{
+			printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•°ï¼š");
+			scanf("%d%d", &i, &j);
 			int sum = divide(i, j);
-			printf("½á¹ûÎª£º%d\n", sum);
+			printf("ç»“æžœä¸ºï¼š%d\n", sum);
 		}
 	}
 	return 0;
